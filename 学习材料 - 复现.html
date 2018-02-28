@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>复现</title>
+  <style type="text/css">
+    body{
+      margin: 0;
+    }
+    .topmenu{
+      list-style: none;
+      background-color: #777;
+      margin: 0;
+      padding:0;
+      overflow: hidden;/*用overflow：hidden来被内联块撑开*/
+    }
+    .topmenu li{
+       float: left;
+     }
+     .topmenu li a{
+      color: white;
+      padding:16px;
+      display: inline-block;
+      text-decoration: none;
+     }
+     .topmenu li a:hover{
+      background-color: #222;
+     }
+  </style>
+</head>
+<body>
+  <ul class="topmenu">
+    <li><a href="">主页</a></li>
+    <li><a href="">新闻</a></li>
+    <li><a href="">联系我们</a></li>
+    <li><a href="">关于我们</a></li>
+  </ul>
+</body>
+</html>
