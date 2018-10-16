@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>琉璃神社</title>
+	<style type="text/css">
+		a{
+			text-decoration: none;
+			color: #FFF;
+		}
+		html{
+			font:12px/16px "微软雅黑";
+			color: #FFF;
+			font-weight: 300;
+		}
+		body{
+			margin: 0;
+			background:url(topBG.jpg) scroll  ;
+			background-position: 50% 50%;
+			background-size :cover;
+			background-attachment: fixed;
+			
+		}
+		.img_con{
+			margin:50px auto;
+			width: 244px;
+			height: 244px;
+			animation: span 15s infinite linear;
+		}
+		@keyframes span{
+			0%{
+				transform: rotateZ(0deg);
+			}
+			100%{
+				transform: rotateZ(360deg);
+			}
+		}
+		@keyframes span_fast{
+			0%{
+				transform: rotateZ(0deg);	
+			}
+			33%{
+				transform: rotateZ(-240deg);
+			}
+			100%{
+				transform: rotateZ(360deg);
+			}
+		}
+		.nav{
+			list-style: none;
+			margin: 75px auto;
+			display: block;
+			text-align: center;
+			padding: 0;
+						width: 30%;
+		}
+		.nav li{
+			margin: 20px auto;
+			line-height: 160%;
+			display: list-item;
+			width: 80%;
+			transition: .2s linear;
+
+		}
+		.nav li:hover{
+			color: #00b3ba;
+			background-color: #FFF;
+			border-radius: 3px;
+			/* animation: span_fast 1s ease-in-out; */
+		}
+	</style>
+</head>
+<body>
+	<div class="img_con" class="img_con">
+		<img src="toplogo.png" alt="toplogo" class="toplogo">
+	</div>
+
+		<ul class="nav">
+			<a href="#"><li>ANIME</li></a>
+			<a href="#"><li>COMIC</li></a>
+			<a href="#"><li>GAMES</li></a>
+		</ul>
+</body>
+</html>
